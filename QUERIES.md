@@ -31,7 +31,18 @@ We can restrict our query results using the **WHERE** clause in order to obtain 
 
 1.**WHERE** clause filters the result set to only include rows where the following condition is true.   
 2.imdb_rating > 8 is the condition. Here, only rows with a value greater than 8 in the imdb_rating column will be returned.    
+***
 
+### **LIKE**
+**LIKE** can be a useful operator when you want to compare similar values.   
+
+    SELECT * 
+    FROM movies
+    HERE name LIKE 'Se_en';
+
+* **LIKE** is a special operator used with the **WHERE** clause to search for a specific pattern in a column.    
+* **name LIKE 'Se_en'** is a condition evaluating the **name** column for a specific pattern.    
+* **Se_en** represents a pattern with a wildcard character.    
 
 
 
