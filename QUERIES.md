@@ -19,6 +19,21 @@
 **DISTINCT** is used to return unique values in the output.      
  It filters out all duplicate values in the specified column(s).
 
+    SELECT DISTINCT tools 
+    FROM inventory;
+***
+### **WHERE**
+We can restrict our query results using the **WHERE** clause in order to obtain only the information we want.    
+
+    SELECT *
+    FROM movies
+    WHERE imdb_rating > 8;
+
+1.**WHERE** clause filters the result set to only include rows where the following condition is true.   
+2.imdb_rating > 8 is the condition. Here, only rows with a value greater than 8 in the imdb_rating column will be returned.    
+
+
+
 
 
 
