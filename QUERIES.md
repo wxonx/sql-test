@@ -63,10 +63,12 @@ any movie that contains the word ‘man’ in its name will be returned in the r
 ***
 ### **BETWEEN**
 The **BETWEEN** operator is used in a **WHERE** clause to filter the result set within a certain *range*.    
-It accepts two values that are either numbers, text or dates.       
+It accepts two values that are either numbers, text or dates.     
+
     SELECT *
     FROM movies
     WHERE year BETWEEN 1990 AND 1999;    
+
 
 
 
