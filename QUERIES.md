@@ -42,7 +42,22 @@ We can restrict our query results using the **WHERE** clause in order to obtain 
 
 * **LIKE** is a special operator used with the **WHERE** clause to search for a specific pattern in a column.    
 * **name LIKE 'Se_en'** is a condition evaluating the **name** column for a specific pattern.    
-* **Se_en** represents a pattern with a wildcard character.    
+* **Se_en** represents a pattern with a wildcard character.        
+
+    SELECT * 
+    FROM movies
+    WHERE name LIKE 'A%';   
+
+**%** is a wildcard character that matches zero or more missing letters in the pattern. For example:   
+* **A%** matches all movies with names that begin with letter ‘A’    
+* **%a** matches all movies that end with ‘a’   
+
+    SELECT * 
+    FROM movies 
+    WHERE name LIKE '%man%';    
+
+any movie that contains the word ‘man’ in its name will be returned in the result.   
+
 
 
 
